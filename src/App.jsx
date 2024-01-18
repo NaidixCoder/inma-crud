@@ -21,6 +21,9 @@ import CuentaCorriente from "./components/CuentaCorriente"
 
 const auth = getAuth(appFirebase);
 
+console.log("Firebase app:", appFirebase);
+console.log("Firebase firestore:", dbFirebase);
+
 function App() {
 
   const [usuario, setUsuario] = useState(null);

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const NavPC = () => {
     return (
-        <nav className="hidden md:flex md:mt-10 w-full">
+        <nav className="hidden lg:flex md:mt-10 w-full">
             <ul className="md:flex flex-col gap-4 w-full font-semibold text-black text-center">
                 <Link to="/productos">
                     <li className=' cursor-pointer px-5 flex bg-cyan-500 py-1 rounded-lg hover:text-yellow-300'>

@@ -24,10 +24,10 @@ const NavBar = () => {
     return (
         <>
 
-        <aside className='col-start-1 col-end-2 h-dvh w-12 lg:w-[300px] md:px-6 sticky pt-10 pb-6 px-1 bg-black flex flex-col items-center justify-between'>
+        <aside className='h-dvh w-12 lg:w-[300px] md:px-6 py-10 px-1 bg-black flex flex-col items-center justify-between'>
 
-            <div className='flex flex-col justify-center items-center'>
-                <picture className='hidden md:flex'>
+            <div className='h-full flex flex-col justify-center items-center'>
+                <picture className='hidden lg:flex'>
                     <img className='' src={Logo} alt="Inma" />
                 </picture>
 
@@ -36,18 +36,12 @@ const NavBar = () => {
                 <NavMobile expandedNav={expandedNav} toggleNav={toggleNav} /> 
             </div>
 
+            {/* FooterPC */}
             <footer className='w-full'>
 
-                {/* FooterPC */}
-                <ul className='hidden md:flex flex-col gap-3'>
+                <ul className='hidden lg:flex flex-col gap-3'>
                     <li className='text-white flex gap-2 items-center'><FaUser className='text-cyan-400 text-xl' />Mi cuenta </li>
                     <li className='text-white flex gap-2 items-center'><AiOutlineLogout className='text-cyan-400 text-xl' />Salir </li>
-                </ul>
-                
-                {/* FooterMobile */}
-                <ul className='md:hidden flex flex-col items-center gap-3'>
-                    <li><FaUser className='text-cyan-400 text-xl' /></li>
-                    <li><AiOutlineLogout className='text-cyan-400 text-xl' /></li>
                 </ul>
 
             </footer>
