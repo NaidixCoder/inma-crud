@@ -24,7 +24,8 @@ const NavBar = () => {
     return (
         <>
 
-        <aside className='h-dvh w-12 lg:w-[300px] md:px-6 py-10 px-1 bg-black flex flex-col items-center justify-between'>
+        <aside className='h-dvh w-12 lg:w-[300px] lg:m-w-[300px] md:px-6 py-10 px-1 bg-black flex flex-col flex-shrink-0 items-center justify-between'>
+
 
             <div className='h-full flex flex-col justify-center items-center'>
                 <picture className='hidden lg:flex'>

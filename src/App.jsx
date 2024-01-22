@@ -11,7 +11,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 // Components 
 import AppContainer from "./components/AppContainer"
 import NavBar from "./components/NavBar"
-import Productos from "./components/Productos"
+import ProductContainer from "./components/ProductContainer"
 import Proveedores from "./components/Proveedores"
 import Caja from "./components/Caja"
 import Admin from "./components/Admin"
@@ -41,7 +41,7 @@ function App() {
     <>
       
       <BrowserRouter>
-        <div className="flex">
+        <div className="flex w-full bg-slate-100">
           <NavBar />
           { usuario ?
           <>
@@ -51,7 +51,7 @@ function App() {
           :
           <Routes>
             <Route path="/" element={<AppContainer/>} />
-            <Route path="/productos" element={<Productos />} />
+            <Route path="/productos" element={<ProductContainer />} />
             <Route path="/cuentacorriente" element={<CuentaCorriente />} />
             <Route path="/proveedores" element={<Proveedores />} />
             <Route path="/caja" element={<Caja />} />
